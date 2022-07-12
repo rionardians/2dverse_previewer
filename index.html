@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <script type="text/javascript" src="./Native/unity-webgl-tools.js"></script>
+    <script type="text/javascript" src="./Native/microphone.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="manifest.json" rel="manifest"/>
+	<link href="style.css" rel="stylesheet">
+	<link rel="icon" href="favicon.ico" type="image/ico">
+	<title>2dversePreviwerApp</title>
+</head>
+<body>
+	<div id="unity-loading">
+		<img src="logo.png" id="unity-loading-logo"/>
+		<div class="progress2 progress-moved">
+			<div class="progress-bar2"></div>
+		</div>
+		<p id="unity-loading-text">Loading 0%</p>
+	</div>
+	<div id="gameContainer">
+		<canvas id="unity-canvas" data-pixel-art="true"></canvas>
+		<script src="Build/Near.loader.js"></script>
+		<script src="script.js"></script>
+		<script src= "https://www.youtube.com/iframe_api"></script>
+		<script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+	</div>
+	<div id="div-embed">
+		<div id="div-embed-header">
+			<span>Click here to move</span>
+			<button class="div-close" type="button" onclick="closeEmbed()">×</button>
+		</div>
+		<div id="player"></div>
+	</div>
+<script src="near/main.1f19ae8e.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+<script src="StreamingAssets/firebase_config.js"></script>
+</body>
+</html>
